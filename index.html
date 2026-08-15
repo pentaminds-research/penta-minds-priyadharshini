@@ -1762,30 +1762,6 @@
         <span></span>
       </div>
     </div>
-
-    <script>
-      (function () {
-        function openSite() {
-          document.body.classList.remove('is-loading');
-
-          var loader = document.querySelector('.page-loader');
-
-          if (loader) {
-            loader.classList.add('done');
-          }
-        }
-
-        if (document.readyState === 'loading') {
-          document.addEventListener('DOMContentLoaded', openSite, {
-            once: true
-          });
-        } else {
-          openSite();
-        }
-
-        window.setTimeout(openSite, 2500);
-      })();
-    </script>
     <header class="site-header">
       <nav class="container nav-wrap" aria-label="Primary navigation">
         <a class="brand" href="#home" aria-label="Penta Minds home">
